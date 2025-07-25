@@ -2,8 +2,8 @@
 import { useState } from "react";
 
 const LoginForm = ({ onLoginSuccess }) => {
-  const [username, setUsername] = useState("carlosandresmoreno");
-  const [password, setPassword] = useState("90122856_Hanz");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
