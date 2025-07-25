@@ -9,7 +9,7 @@ const LoginForm = ({ onLoginSuccess }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("/api/login/", {
+    const res = await fetch("http://46.202.88.87:8010/usuarios/api/login/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password }),

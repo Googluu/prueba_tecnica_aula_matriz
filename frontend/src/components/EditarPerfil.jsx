@@ -46,7 +46,7 @@ const EditarPerfil = ({ token, perfilActual, onBack }) => {
         esta_verificado: form.esta_verificado,
     };
 
-    const res = await fetch("/api/usuario/perfil/", {
+    const res = await fetch("http://46.202.88.87:8010/usuarios/api/usuario/perfil/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

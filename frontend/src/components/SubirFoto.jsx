@@ -11,7 +11,7 @@ const SubirFoto = ({ token, onBack }) => {
     const formData = new FormData();
     formData.append("foto", archivo);
 
-    const res = await fetch("/api/perfil/foto/", {
+    const res = await fetch("http://46.202.88.87:8010/usuarios/api/perfil/foto/", {
       method: "PATCH",
       headers: {
         // "Content-Type": "multipart/form-data",

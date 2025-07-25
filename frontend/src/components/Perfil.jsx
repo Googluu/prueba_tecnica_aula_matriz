@@ -9,7 +9,7 @@ const Perfil = ({ token }) => {
 
   const fetchPerfil = async () => {
     try {
-      const res = await fetch("/api/perfil/", {
+      const res = await fetch("http://46.202.88.87:8010/usuarios/api/perfil/", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
